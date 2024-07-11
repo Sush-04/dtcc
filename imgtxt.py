@@ -1,15 +1,18 @@
 from PIL import Image
-import pytesseract
-pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+from pytesseract import pytesseract
+path_to_tesseract = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
-image_path =r'C:\Users\sush\Downloads\test2.jpg'
-with Image.open(image_path) as img:
+
+def txt(path):
+    pytesseract.tesseract_cmd = path_to_tesseract
+    img = Image.open(path)
+    print(img)
     text = pytesseract.image_to_string(img)
-    print("yes")
-    print(text)
-print(text)
+    if text:
+        return(text)
+    else:
+        return("No text found")
 
-
-
-
-# pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+path = 'test4.jpeg'
+res = txt(path)
+print(res)

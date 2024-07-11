@@ -1,6 +1,9 @@
 import fitz
 import re
 import csv
+from PIL import Image
+from pytesseract import pytesseract
+path_to_tesseract = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
 def extract(pdf_path):
     pdf_dummy = fitz.open(pdf_path)

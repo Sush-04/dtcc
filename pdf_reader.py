@@ -56,7 +56,7 @@ def generate_report(pdf_path, titles):
         writer.writerow([titles[-1], "Yes" if has_content else "No"])
 
 # Usage example
-pdf_path = "C:/Users/sush/Downloads/trial1.pdf"  # Path to the PDF file
+pdf_path = "C:/Users/sush/Downloads/Nature_Book.pdf"  # Path to the PDF file
 titles = ["abc", "bcd", "cde", "def","efg"]
 # generate_report(pdf_path, titles)
 # print("Report generated: report.csv")
