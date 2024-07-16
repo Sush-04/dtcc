@@ -74,6 +74,6 @@ def generate_report(pdf_path, output_folder):
                 writer.writerow([title, start_page, "No"])
             
 # eg
-pdf_path = "C:/Users/sush/Downloads/Bookmarked_PDF_Revised.pdf" 
+pdf_path = "C:/Users/sush/Downloads/sample_test.pdf" 
 output_folder = "C:/Users/sush/Downloads/my_folder"  
 generate_report(pdf_path, output_folder)
