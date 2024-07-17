@@ -123,6 +123,6 @@ def generate_report(pdf_path, output_folder):
         doc.close()
 
 # Example usage
-pdf_path = "C:/Users/sush/Downloads/bookmarked__with_subtitles.pdf" 
+pdf_path = "C:/Users/sush/Downloads/Arul-Jessica-A-FlowCV-Resume-20240417 (1).pdf" 
 output_folder = "C:/Users/sush/Downloads/my_folder"
 generate_report(pdf_path, output_folder)

@@ -20,7 +20,7 @@ def extract_bookmarks(pdf_path):
     return bookmarks
 
 # Example usage
-pdf_path = 'C:/Users/sush/Downloads/sample_test.pdf'
+pdf_path = "C:/Users/sush/Downloads/Arul-Jessica-A-FlowCV-Resume-20240417 (1).pdf"
 bookmarks = extract_bookmarks(pdf_path)
 for bookmark in bookmarks:
     print(f"Page {bookmark['page']}: {bookmark['title']} ")
